@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+            <ImageView android:id="@+id/titleImage"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentTop="true"
+                       android:layout_centerHorizontal="true"
+                       android:layout_marginTop="8dp"
+                       android:src="@drawable/promise"/>
+            <LinearLayout android:id="@+id/seventyFive"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/titleImage"
+                          android:layout_marginTop="20dp"
+                          android:orientation="horizontal">
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_margin="12dp"
+                           android:src="@drawable/kuai"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:orientation="vertical">
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="75天拿证"
+                              android:textSize="17sp"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginRight="10dp"
+                              android:layout_marginTop="10dp"
+                              android:hint="学员最快可字啊75天内完成驾考的培训，拿到驾驶证，保证质量"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/car"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/seventyFive"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_margin="12dp"
+                           android:src="@drawable/car"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:orientation="vertical">
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="车接车送"
+                              android:textSize="17sp"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginRight="10dp"
+                              android:layout_marginTop="10dp"
+                              android:hint="学员在学车期间，本驾校将免费定时定点接送，方便每一个位学员，请到指定场地。"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/yuyue"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/car"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_margin="12dp"
+                           android:src="@drawable/calculator"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:orientation="vertical">
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="预约学车"
+                              android:textSize="17sp"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginRight="10dp"
+                              android:layout_marginTop="10dp"
+                              android:hint="当学员报过名，缴过费用，便可以随时可以预约学车的时间，具体细节，请详见预约系统上线之后"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/yuyue"
+
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_margin="12dp"
+                           android:src="@drawable/kao"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:orientation="vertical">
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="预约考试"
+                              android:textSize="17sp"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginRight="10dp"
+                              android:layout_marginTop="10dp"
+                              android:hint="每一个学员，在学满一定可是之后，就可以在个人中心，自主提交申请考试。"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button android:id="@+id/dialog_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/themeColor"
+            android:padding="10dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <include
+        android:id="@+id/reservation_time_title"
+        layout="@layout/title"/>
+    <LinearLayout
+        android:id="@+id/reservation_time_message_id"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/reservation_time_title"
+        android:background="@drawable/headbackground"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="教练：百信学车"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="场地：莲花路与汤口路交叉口"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/day_time"
+        style="@style/RadioButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/reservation_time_message_id"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_btn_01"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/app_text_select"
+            android:gravity="center"
+            android:text="radio_btn_01"
+            android:textColor="@drawable/day_selector"
+            android:textSize="15sp"/>
+        <RadioButton
+            android:id="@+id/radio_btn_02"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/app_text_select"
+            android:gravity="center"
+            android:text="radio_btn_02"
+            android:textColor="@drawable/day_selector"
+            android:textSize="15sp"/>
+        <RadioButton
+            android:id="@+id/radio_btn_03"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/app_text_select"
+            android:gravity="center"
+            android:text="radio_btn_03"
+            android:textColor="@drawable/day_selector"
+            android:textSize="15sp"/>
+        <RadioButton
+            android:id="@+id/radio_btn_04"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/app_text_select"
+            android:gravity="center"
+            android:text="radio_btn_04"
+            android:textColor="@drawable/day_selector"
+            android:textSize="15sp"/>
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/reservation_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/day_time"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/reservation_now_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"
+        android:text="提交预约"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+</RelativeLayout>

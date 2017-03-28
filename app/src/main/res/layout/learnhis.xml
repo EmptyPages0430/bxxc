@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <include
+        android:id="@+id/title"
+        layout="@layout/title"/>
+    <RadioGroup android:id="@+id/radioGroup"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@id/title"
+                android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_btn01"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selector"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="已学时"
+            android:textColor="@color/redTheme"/>
+        <RadioButton
+            android:id="@+id/radio_btn02"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="未学车"
+            android:textColor="@color/right_bg"/>
+    </RadioGroup>
+    <LinearLayout android:id="@+id/layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/radioGroup"
+                  android:orientation="horizontal"
+                  android:padding="10dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:hint="温馨提示："
+                  android:textSize="10sp"/>
+        <TextView android:id="@+id/tips"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="这里显示您已约时间段，并且已确定学车！"
+                  android:textColor="@color/orange"
+                  android:textSize="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/line"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_below="@+id/layout"
+          android:background="@color/loginbackground"/>
+    <com.jgkj.bxxc.tools.RefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipehis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_below="@+id/line">
+        <ListView android:id="@+id/listView"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"/>
+    </com.jgkj.bxxc.tools.RefreshLayout>
+    <Button
+        android:id="@+id/baoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/gray"
+        android:enabled="false"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="报名考试"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+</RelativeLayout>

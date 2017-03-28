@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/walk"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/actionsheet_top_selector"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="步行"
+        android:textColor="#0000ff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/driver"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/actionsheet_top_selector"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="乘车"
+        android:textColor="#0000ff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bus"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/actionsheet_top_selector"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="公交车"
+        android:textColor="#0000ff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

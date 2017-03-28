@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightgray">
+    <include
+        android:id="@+id/imme_title"
+        layout="@layout/title"/>
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imme_title">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/something"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.jgkj.bxxc.tools.RoundImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/head"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="驾照包过"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="车接车送|4人一车"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="10dp"
+                        android:text="￥888"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/something"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="包含以下费用"
+                android:textSize="17sp"/>
+
+            <LinearLayout
+                android:id="@+id/service_cost_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cost"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/service_cost"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:padding="10dp"
+                    android:text="\u3000\u3000服务费"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:paddingRight="0dp"
+                    android:text="￥2888"
+                    android:textColor="#FF8000"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="200dp"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/service_cost_layout"
+                android:layout_gravity="right"/>
+            <LinearLayout
+                android:id="@+id/Insurance_cost_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Insurance_cost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="\u3000\u3000保险费用"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:paddingRight="0dp"
+                    android:text="￥50"
+                    android:textColor="#FF8000"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/promise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Insurance_cost_layout"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="培训承诺"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/our_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/promise"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:text="我们牛b，我们牛×\n我们牛b，我们牛×\n我们牛b，我们牛×\n我们牛b，我们牛×\n我们牛b，我们牛×\n我们牛b，我们牛×\n我们牛b，我们牛×\n我们牛b，我们牛×\n我们牛b，我们牛×\n我们牛b，我们牛×\n"/>
+
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/call_help"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/phone2x"
+            android:text="电话咨询"
+            android:textColor="@color/red"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/imme_rightNow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="立刻报名"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+    </LinearLayout>
+</RelativeLayout>

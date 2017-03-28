@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>   
+    <color name="active">#1f1f1f</color>
+    <color name="unactive">#dddddd</color>
+    <color name="gray">#BFBFBF</color>
+    <color name="darkgray">#555555</color>
+    <color name="red">#E4393C</color>
+    <color name="blue">#0000ff</color>
+    <color name="orange">#FF8000</color>
+    <color name="loginbackground">#708090</color>
+    <color name="white">#F7F7F7</color>
+    <color name="lightwhite">#EFEFF4</color>
+     <color name="colorbackground">#FF080808</color>
+    <color name="colorred">#FF0000</color>
+    <color name="colortitle">#FF8000</color>
+    <color name="background">#FFE4E3E3</color>
+    <color name="lightgray">#EFEFF4</color>
+    <color name="smoke">#F5F5F5</color>
+    <color name="lightWhite">#F7F7F7</color>
+    <color name="background_floating_material_dark">#FDEED4</color>
+    <color name="redTheme">#E4393C</color>
+    <color name="right_bg">#696969</color>
+    <color name="blur_bg">#FFFAF0</color>
+    <color name="color_bule">#2F9BFF</color>
+    <color name="color_bule2">#40B3F0</color>
+    <color name="color_bule3">#99ddff</color>
+    <color name="transparent">#00000000</color>
+    <color name="zu_choose_left_item_diveder">#D6D6D5</color>
+    <color name="zu_choose_left_item_bg">#E5E5E5</color>
+    <color name="zu_choose_right_item_bg">#F3F3F3</color>
+    <color name="list_text_select_color">#FF822E</color>
+    <color name="themeColor">#FF5000</color>
+    <color name="green">#009049</color>
+    <color name="titleBlue">#4876FF</color><!--天兰色 -->
+</resources>

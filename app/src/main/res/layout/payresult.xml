@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:layout_centerInParent="true"
+                  android:orientation="vertical">
+        <com.jgkj.bxxc.tools.RoundImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/success"
+            android:src="@drawable/payresult_success"
+            android:layout_height="wrap_content"/>
+        <com.jgkj.bxxc.tools.RoundImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/failure"
+            android:visibility="gone"
+            android:src="@drawable/payresult_failure"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:layout_marginTop="10dp"
+                      android:id="@+id/chenggong"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="20sp"
+                      android:text="恭喜您！您已成功支付"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="3299"
+                      android:id="@+id/price"
+                      android:textSize="20sp"
+                      android:textColor="@color/themeColor"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="20sp"
+                      android:text="元学费"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:layout_marginTop="10dp"
+                      android:visibility="gone"
+                      android:id="@+id/shibai"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="20sp"
+                      android:text="抱歉，您支付失败，您可以在个人中心页面进行订单查询和继续支付！"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

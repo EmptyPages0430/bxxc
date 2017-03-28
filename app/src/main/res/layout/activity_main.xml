@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title"/>
+
+    <ScrollView
+        android:id="@+id/scroll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="55dp"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:id="@+id/index_fragment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/car_send_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginBottom="55dp"
+        android:visibility="gone"/>
+    <!-- 导航栏 -->
+
+    <RadioGroup
+        android:id="@+id/bottom_bar"
+        style="@style/RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/radio_button_01"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/navigation"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:id="@+id/radio_button_02"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="报考"
+            android:textColor="@drawable/navigation"
+            android:textSize="10sp"/>
+        <RadioButton
+            android:id="@+id/radio_button_03"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="学习"
+            android:textColor="@drawable/navigation"
+            android:textSize="10sp"/>
+        <RadioButton
+            android:id="@+id/radio_button_04"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/navigation"
+            android:textSize="10sp"/>
+    </RadioGroup>
+
+</RelativeLayout>

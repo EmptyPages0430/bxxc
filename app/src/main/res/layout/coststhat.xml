@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:scrollbars="none">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+            <ImageView android:id="@+id/titleImage"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentTop="true"
+                       android:layout_centerHorizontal="true"
+                       android:layout_marginTop="8dp"
+                       android:src="@drawable/coststhat"/>
+            <LinearLayout android:id="@+id/seventyFive"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/titleImage"
+                          android:layout_marginTop="20dp"
+                          android:orientation="horizontal">
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_margin="12dp"
+                           android:src="@drawable/cost_image_yuan"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:orientation="vertical">
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="报名费"
+                              android:textSize="17sp"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginRight="10dp"
+                              android:layout_marginTop="10dp"
+                              android:hint="报名费应该是包含培训费、体检费、考试费"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/car"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/seventyFive"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_margin="12dp"
+                           android:src="@drawable/cost_image_yuan"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:orientation="vertical">
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="培训费"
+                              android:textSize="17sp"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginRight="10dp"
+                              android:layout_marginTop="10dp"
+                              android:hint="教材费，教练员培训指导费用。"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/yuyue"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/car"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_margin="12dp"
+                           android:src="@drawable/cost_image_yuan"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:orientation="vertical">
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="考试费"
+                              android:textSize="17sp"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginRight="10dp"
+                              android:layout_marginTop="10dp"
+                              android:hint="车管所会对参加考试的学员收取考试费，该费用一般由驾校代为收取，统一安排考试。"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/yuyue"
+
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_margin="12dp"
+                           android:src="@drawable/cost_image_yuan"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:orientation="vertical">
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="体检费"
+                              android:textSize="17sp"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginRight="10dp"
+                              android:layout_marginTop="10dp"
+                              android:hint="驾驶员考试体检费用主要为视力检查的费用。"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <Button android:id="@+id/dialog_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/themeColor"
+            android:padding="10dp"
+            android:text="确定"
+            android:textColor="@color/white"/>
+</RelativeLayout>

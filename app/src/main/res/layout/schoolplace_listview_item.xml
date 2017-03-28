@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/CityPic"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/head1"/>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_weight="4"
+                  android:orientation="vertical">
+        <TextView
+            android:id="@+id/CityName"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:gravity="center_vertical"
+            android:text="经开区-蜀山校区"
+            android:textColor="#FF8000"/>
+        <TextView android:id="@+id/place"
+                  android:layout_width="wrap_content"
+                  android:layout_height="28dp"
+                  android:gravity="center_vertical"
+                  android:text="繁华大道与莲花路交叉口往西500米，尚泽国际405室"
+                  android:textSize="12sp"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="20dp"
+                      android:orientation="horizontal">
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/schId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="13KM"
+                android:textColor="@color/right_bg"
+                android:layout_marginRight="14dp"
+                android:gravity="right"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

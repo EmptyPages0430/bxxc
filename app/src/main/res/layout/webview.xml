@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include
+        android:id="@+id/title"
+        layout="@layout/title"/>
+    <RadioGroup android:id="@+id/radioGroup"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/title"
+                android:background="@color/lightwhite"
+                android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_btn01"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="线路一"/>
+
+        <RadioButton
+            android:id="@+id/radio_btn02"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="接送时间"
+            android:textColor="@color/right_bg"/>
+    </RadioGroup>
+    <TextView android:id="@+id/textView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/radioGroup"
+              android:padding="10dp"
+              android:textSize="17sp"/>
+    <WebView android:id="@+id/webView"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@+id/textView"/>
+</RelativeLayout>

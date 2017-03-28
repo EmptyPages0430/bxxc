@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginRight="15dp"
+              android:background="@color/white"
+              android:paddingRight="10dp"
+              android:orientation="horizontal">
+        <com.jgkj.bxxc.tools.RoundImageView
+            android:id="@+id/student_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gray"
+            android:text="匿名评价"/>
+        <TextView
+            android:id="@+id/evaluate_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="2016-11-23 12:08:26"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/student_decribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="教练温柔和善"
+            android:paddingBottom="15dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>

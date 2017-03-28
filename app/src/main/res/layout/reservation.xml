@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+    <include
+        android:id="@+id/res_title"
+        layout="@layout/title"/>
+    <!-- 学员评价 -->
+    <com.jgkj.bxxc.tools.RefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp">
+        <ListView
+            android:id="@+id/student_evaluate_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"/>
+    </com.jgkj.bxxc.tools.RefreshLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:layout_alignParentBottom="true"
+                  android:orientation="horizontal">
+        <TextView
+            android:id="@+id/connectCus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/kefudh"
+            android:gravity="center"
+            android:text="联系客服"
+            android:textColor="@color/themeColor"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/signup_Coach"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/themeColor"
+            android:gravity="center"
+            android:text="立即报名"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

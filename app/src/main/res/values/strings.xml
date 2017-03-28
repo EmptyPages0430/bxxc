@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tag_hint">Tag can be number, alphabet, underscore, Chinese. Use , to split many tags.</string>
+    <string name="alias_hint">Alias can be number, alphabet, underscore, Chinese.</string>
+    <string name="style_hint">style should be number</string>
+    <string name="app_name">百信学车</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="phone">请输入用户名/手机号码</string>
+    <string name="password">请输入用户密码</string>
+    <string name="login_btn">登    录</string>
+    <string name="register">免费注册</string>
+    <string name="callback">找回密码</string>
+    <string name="morenews">更多关于百信学车</string>
+    <string name="baixin"> 百信学车</string>
+    <string name="underline_text"><u>百信学车服务条款</u></string>
+    <string name="version_unknown">请求异常</string>
+    <string name="line"><hr/></string>
+    <string name="gotonext">前往完成下一步</string>
+    <string name="gotobaoming">前去报名</string>
+    <string name="complete">前去完善信息</string>
+    <string name="mianqian">申请面签体检</string>
+    <string name="sub1">准备考试中</string>
+    <string name="sub2">预约科目二考试</string>
+    <string name="sub3">预约科目三考试</string>
+    <string name="sub4">预约科目四考试</string>
+    <string name="sub11">科目一未通过，请缴补考费</string>
+    <string name="sub21">科目二未通过，请缴补考费</string>
+    <string name="sub31">科目三未通过，请缴补考费</string>
+    <string name="sub41">科目四未通过，请缴补考费</string>
+    <string name="subing1">申请科目一考试</string>
+    <string name="subing2">申请科目二</string>
+    <string name="subing3">申请科目三</string>
+    <string name="subing4">申请科目四</string>
+
+    <string name="comTotal">等待拿证</string>
+
+    <string name="pay"><u>前去付款</u></string>
+    <string name="changeCoach"><u>更改教练</u></string>
+    <string name="nothing"><u>该时间段暂无排课，请选择其他时间段。</u></string>
+
+
+
+    <string-array name="planets_array">
+        <item>修改资料</item>
+        <item>我的学车</item>
+        <item>详细</item>
+        <item>设置</item>
+        <item>更多关于百信学车</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <string-array name="spinger1">
+        <item>合肥</item>
+    </string-array>
+    <string-array name="spinger2">
+        <item>越达驾校(新周谷堆校区)</item>
+        <item>越达驾校(包河区第一校区)</item>
+        <item>越达驾校(大学城中心校区)</item>
+        <item>越达驾校(蜀山区新华校区)</item>
+        <item>越达驾校(庐阳区总校区)</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lightgray"
+              android:orientation="vertical">
+    <include
+        layout="@layout/title"/>
+    <RadioGroup style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_btn01"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/bg_selector"
+            android:textColor="@color/redTheme"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="报名订单"/>
+
+        <RadioButton
+            android:id="@+id/radio_btn02"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textColor="@color/right_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="补考订单"/>
+    </RadioGroup>
+    <ListView android:id="@+id/listView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/textView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:gravity="center_horizontal"
+              android:visibility="gone"/>
+</LinearLayout>

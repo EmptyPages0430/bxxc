@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <include layout="@layout/title"/>
+    <EditText android:id="@+id/editContext"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:layout_margin="5dp"
+              android:background="@drawable/rounded_edit"
+              android:gravity="top"
+              android:hint="请输入学员评价"
+              android:padding="10dp"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:padding="10dp">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="right"
+                  android:gravity="right"
+                  android:id="@+id/textLength"
+                  android:text="0/120"
+                  android:textColor="@color/redTheme"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:padding="10dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center_vertical"
+                  android:text="综合评价："/>
+        <com.jgkj.bxxc.tools.StarBar
+            android:id="@+id/starBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/display"
+            ratingbar:starCount="5"
+            ratingbar:starDistance="5dp"
+            android:layout_marginLeft="5dp"
+            ratingbar:starEmpty="@drawable/star_empty"
+            ratingbar:starFill="@drawable/star_full"
+            ratingbar:starSize="27dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:padding="10dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center_vertical"
+                  android:text="服务态度："/>
+        <com.jgkj.bxxc.tools.StarBar
+            android:id="@+id/starBar2"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/display"
+            ratingbar:starCount="5"
+            ratingbar:starDistance="5dp"
+            ratingbar:starEmpty="@drawable/star_empty"
+            ratingbar:starFill="@drawable/star_full"
+            ratingbar:starSize="27dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:padding="10dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center_vertical"
+                  android:text="教学质量："/>
+        <com.jgkj.bxxc.tools.StarBar
+            android:id="@+id/starBar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/display"
+            ratingbar:starCount="5"
+            android:layout_marginLeft="5dp"
+            ratingbar:starDistance="5dp"
+            ratingbar:starEmpty="@drawable/star_empty"
+            ratingbar:starFill="@drawable/star_full"
+            ratingbar:starSize="27dp"/>
+    </LinearLayout>
+
+</LinearLayout>

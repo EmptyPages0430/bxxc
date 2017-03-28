@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <include layout="@layout/title"/>
+    <com.jgkj.bxxc.tools.RefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:text="\u3000\u3000*温馨提示，每个时间段上线人数为三人，并且距学车时间段2小时内不可被取消。"
+                android:textColor="@color/themeColor"
+                android:padding="10dp"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+            android:background="@color/gray"/>
+            <TextView android:id="@+id/textView"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:gravity="center_horizontal"
+                      android:text="暂时没有可选时间段"
+                      android:visibility="gone"/>
+            <ListView android:id="@+id/listView"
+                      android:background="#ffffff"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </com.jgkj.bxxc.tools.RefreshLayout>
+</LinearLayout>

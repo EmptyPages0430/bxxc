@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/lightwhite"
+                  android:padding="10dp"
+                  android:text="学车技巧"/>
+        <View android:layout_width="match_parent"
+              android:layout_height="0.1dp"
+              android:background="@color/gray"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:id="@+id/dangweicaozuo"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:drawablePadding="5dp"
+                          android:drawableTop="@drawable/daoweicaozuo"
+                          android:gravity="center_horizontal|bottom"
+                          android:text="档位操作"/>
+                <TextView android:id="@+id/biangengchedao"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:drawablePadding="5dp"
+                          android:drawableTop="@drawable/biangengchedao"
+                          android:gravity="center_horizontal|bottom"
+                          android:text="变更车道"/>
+                <TextView android:id="@+id/kaobiantingche"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:drawablePadding="5dp"
+                          android:drawableTop="@drawable/kaobiantingche"
+                          android:gravity="center_horizontal|bottom"
+                          android:text="靠标停车"/>
+                <TextView android:id="@+id/chaoche"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:drawablePadding="5dp"
+                          android:drawableTop="@drawable/chaoche"
+                          android:gravity="center_horizontal|bottom"
+                          android:text="超车"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+                <TextView android:id="@+id/huiche"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:drawablePadding="5dp"
+                          android:drawableTop="@drawable/huiche"
+                          android:gravity="center_horizontal|bottom"
+                          android:text="会车"/>
+                <TextView android:id="@+id/diaotou"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:drawablePadding="5dp"
+                          android:drawableTop="@drawable/diaotou"
+                          android:gravity="center_horizontal|bottom"
+                          android:text="掉头"/>
+                <TextView android:id="@+id/zhixianxingshi"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:drawablePadding="5dp"
+                          android:drawableTop="@drawable/zhixianxingshi"
+                          android:gravity="center_horizontal|bottom"
+                          android:text="直线行驶"/>
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:drawablePadding="5dp"
+                          android:drawableTop="@drawable/dengguangkongzhi"
+                          android:gravity="center_horizontal|bottom"
+                          android:text="灯光控制"
+                          android:id="@+id/dengguangkongzhi"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+              android:layout_height="0.1dp"
+              android:layout_marginTop="10dp"
+              android:background="@color/gray"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/lightwhite"
+                  android:padding="10dp"
+                  android:text="学车视频"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0.1dp"
+          android:background="@color/gray"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  android:orientation="horizontal">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical">
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="130dp">
+                <ImageView
+                    android:id="@+id/videoview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/coach_pic"/>
+                <TextView android:id="@+id/time1"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="right|bottom"
+                          android:background="@color/gray"
+                          android:text="00:00:00"/>
+            </FrameLayout>
+            <TextView android:id="@+id/textView1"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:paddingTop="10dp"
+                      android:text="倒车入库"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="5dp"
+                      android:layout_weight="1"
+                      android:orientation="vertical">
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="130dp">
+                <ImageView
+                    android:id="@+id/videoview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/coach_pic"/>
+                <TextView android:id="@+id/time2"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="right|bottom"
+                          android:background="@color/gray"
+                          android:text="00:00:00"/>
+            </FrameLayout>
+            <TextView android:id="@+id/textView2"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:paddingTop="10dp"
+                      android:text="倒车入库"/>
+        </LinearLayout>
+    </LinearLayout>
+        <View android:layout_width="match_parent"
+              android:layout_height="0.1dp"
+              android:layout_marginTop="10dp"
+              android:background="@color/lightgray"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/learnSkills"
+                      android:background="#FFFFFF"
+                      android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:textSize="14sp"
+                android:text="学车技巧"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="right"
+                android:background="#FFFFFF"
+                android:paddingBottom="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+              android:layout_height="0.1dp"
+              android:background="@color/lightgray"/>
+</LinearLayout>
+    </ScrollView>
+

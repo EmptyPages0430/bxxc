@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jgkj.bxxc.tools.RefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:isScrollContainer="false"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/un_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:text="您暂时尚未登录"
+                android:visibility="gone"/>
+            <!-- 头像栏 -->
+
+            <LinearLayout
+                android:id="@+id/sethead_id"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/headbackground"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.jgkj.bxxc.tools.RoundImageView
+                    android:id="@+id/choose_headImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/head1"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/userNick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Empty Pages"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/userInfo_textView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableLeft="@drawable/person_info"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="14dp"
+                    android:text="个人信息"
+                    android:textSize="20sp"/>
+
+                <View android:layout_width="0.1dp"
+                      android:layout_height="match_parent"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginTop="10dp"
+                      android:background="@color/loginbackground"/>
+
+                <TextView
+                    android:id="@+id/myOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableLeft="@drawable/myorder"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="14dp"
+                    android:text="我的账户"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:background="@color/background"/>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:layout_marginTop="10dp"
+                  android:background="@color/background"/>
+            <!-- 我的教练 -->
+
+            <TextView
+                android:id="@+id/myCoach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/jiaolian"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="我的教练"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:background="@color/background"/>
+            <!-- 我的优惠券 -->
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:layout_marginTop="10dp"
+                  android:background="@color/background"/>
+            <!-- 学车进程 -->
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="#FFFFFF"
+                          android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/xuechejincheng"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="学车进程"/>
+                <TextView
+                    android:id="@+id/learnPro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:gravity="right"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:background="@color/background"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="#FFFFFF"
+                          android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/learnhis"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="学车记录"/>
+                <TextView
+                    android:id="@+id/learnHis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:gravity="right"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:background="@color/background"/>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:layout_marginTop="10dp"
+                  android:background="@color/background"/>
+            <!-- 客服 -->
+
+            <TextView
+                android:id="@+id/customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/dianhua"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="客服热线"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:layout_marginLeft="50dp"
+                  android:background="@color/background"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="#FFFFFF"
+                          android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/learnhis"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="活动中心"/>
+                <TextView
+                    android:id="@+id/myactivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:gravity="right"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:background="@color/background"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:layout_marginTop="10dp"
+                  android:background="@color/background"/>
+            <!-- 常见问题等 -->
+
+            <TextView
+                android:id="@+id/sim_Question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/xueyuanwenti"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="常见问题"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:layout_marginLeft="50dp"
+                  android:background="@color/lightgray"/>
+            <TextView
+                android:id="@+id/aboutBX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/gongsijieshao"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="关于百信"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:layout_marginLeft="50dp"
+                  android:background="@color/lightgray"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="#FFFFFF"
+                          android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ruanjianxinxi"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="版本信息"/>
+                <TextView
+                    android:id="@+id/softInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:gravity="right"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:text="1.0.1"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:layout_marginLeft="50dp"
+                  android:background="@color/background"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="#FFFFFF"
+                          android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/clean"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="缓存大小"/>
+                <TextView
+                    android:id="@+id/cleanUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:gravity="right"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:text="0kb"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+                  android:background="@color/background"/>
+            <!-- 退出登录 -->
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/red"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </ScrollView>
+</com.jgkj.bxxc.tools.RefreshLayout>
