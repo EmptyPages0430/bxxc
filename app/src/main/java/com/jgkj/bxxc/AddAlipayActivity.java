@@ -50,9 +50,11 @@ public class AddAlipayActivity extends Activity implements View.OnClickListener,
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
+
             case R.id.button_backward:
                 finish();
                 break;
+
             case R.id.button_forward:
                 Intent intent = new Intent();
                 intent.setClass(AddAlipayActivity.this, PhoneCodeActivity.class);
@@ -80,10 +82,12 @@ public class AddAlipayActivity extends Activity implements View.OnClickListener,
         }else {
             button_forward.setVisibility(View.GONE);
         }
+
     }
 
     @Override
     public void afterTextChanged(Editable editable) {
 
     }
+
 }
