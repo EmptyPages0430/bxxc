@@ -7,6 +7,14 @@ package com.jgkj.bxxc.bean;
 public class NoResultAction {
     private int code;
     private String reason;
+    public Result result;
+
+    public Result getResult() {
+        return result;
+    }
+
+    public class Result{
+    }
 
     public int getCode() {
         return code;
